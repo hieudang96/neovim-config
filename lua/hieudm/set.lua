@@ -31,4 +31,5 @@ vim.opt.colorcolumn = "80"
 vim.opt.clipboard = 'unnamedplus'
 
 vim.g.mapleader = " "
-
+vim.g.autochdir = true
+vim.g.modifiable = true
