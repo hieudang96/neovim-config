@@ -41,11 +41,12 @@ end)
 
 require("mason").setup({})
 require("mason-lspconfig").setup({
-  ensure_installed = {"tsserver", "lua_ls", "cssmodules_ls", "cssls"},
+  ensure_installed = {"ts_ls", "lua_ls", "cssmodules_ls", "cssls", "svelte"},
   handlers = {
     lsp.default_setup,
   },
-})
+});
+
 
 vim.diagnostic.config({
     virtual_text = true

@@ -27,11 +27,3 @@ vim.keymap.set("i", "<C-S-[>", "<C-o>va}", default)
 vim.keymap.set("i", "<A-[>", "<C-o>]m", default)
 vim.keymap.set("i", "<A-S-[>", "<C-o>[m", default)
 
-vim.keymap.set("n", "<C-k>", function()
-    fname = vim.ui.input({ prompt = "File:", completion = "dir"}, function(fpath)
-            vim.cmd("cd " .. fpath)
-        end
-    )
-    end
-)
-
