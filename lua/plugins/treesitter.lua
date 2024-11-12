@@ -4,7 +4,8 @@ local M = {
         require("nvim-treesitter.install").update({ with_sync = true })()
     end,
     config = function()
-    	local configs = require("nvim-treesitter.configs")
+    	require 'nvim-treesitter.install'.compilers = { "zig" }
+        local configs = require("nvim-treesitter.configs")
 
         configs.setup({
             textobjects = {
