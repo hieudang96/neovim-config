@@ -13,7 +13,7 @@ vim.keymap.set({"n", "v"}, "<C-S-v>", '"+p<BAR><BAR>i')
 vim.keymap.set("i", "<C-v>", '<C-o>P')
 
 -- screen manupulate
-vim.keymap.set({"i", "n"}, "<C-S-Tab>", '<ESC><C-W>n<BAR>:terminal<CR><BAR><C-W>r<BAR>', default)
+vim.keymap.set("n", "<leader>f", vim.lsp.buf.format)
 vim.keymap.set({"i", "n"}, "<C-t>", vim.cmd.tabnew)
 
 -- quick esc
