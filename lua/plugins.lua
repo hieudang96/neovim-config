@@ -9,5 +9,6 @@ return {
 	{'L3MON4D3/LuaSnip'},
 	"folke/neodev.nvim",
 	"folke/which-key.nvim",
+    "numToStr/Comment.nvim",
 	{ "folke/neoconf.nvim", cmd = "Neoconf" },
 }

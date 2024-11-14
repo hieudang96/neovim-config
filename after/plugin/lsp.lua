@@ -41,7 +41,7 @@ end)
 
 require("mason").setup({})
 require("mason-lspconfig").setup({
-  ensure_installed = {"ts_ls", "lua_ls", "cssmodules_ls", "cssls", "svelte"},
+  ensure_installed = {"ts_ls", "lua_ls", "cssls", "svelte"},
   handlers = {
     lsp.default_setup,
   },
