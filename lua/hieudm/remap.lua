@@ -1,4 +1,9 @@
 local default = { noremap = true, silent = true }
+-- plugin config
+vim.keymap.set('n', '<leader>S', '<cmd>lua require("spectre").toggle()<CR>', {
+    desc = "Toggle Spectre"
+})
+vim.keymap.set("n", "<space>fb", ":Telescope file_browser<CR>")
 -- file movement
 vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
 
@@ -25,5 +30,6 @@ vim.keymap.set("i", "<S-right>", "<C-o>v<C-g>", default)
 vim.keymap.set("i", "<C-[>", "<C-o>va[", default)
 vim.keymap.set("i", "<C-S-[>", "<C-o>va}", default)
 vim.keymap.set("i", "<A-[>", "<C-o>]m", default)
-vim.keymap.set("i", "<A-S-[>", "<C-o>[m", default)
-
+vim.keymap.set("i", "<A-]>", "<C-o>[m", default)
+vim.keymap.set("i", "<A-;>", "<C-o>]M", default)
+vim.keymap.set("i", "<A-'>", "<C-o>[M", default)
