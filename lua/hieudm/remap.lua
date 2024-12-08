@@ -35,7 +35,7 @@ vim.keymap.set("i", "<A-;>", "<C-o>]M", default)
 vim.keymap.set("i", "<A-'>", "<C-o>[M", default)
 
 -- tab remap
-vim.keymap.set("n", "<C-w>", vim.cmd.tabclose, default)
+vim.keymap.set("n", "<C-q>", vim.cmd.tabclose, default)
 vim.keymap.set("n", "<A-0>", vim.cmd.tabfir, default)
 vim.keymap.set("n", "<A-9>", vim.cmd.tabl, default)
 vim.keymap.set("n", "<C-Tab>", "gt", default) 
