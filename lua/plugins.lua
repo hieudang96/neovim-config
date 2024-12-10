@@ -10,6 +10,15 @@ return {
     "folke/neodev.nvim",
     "folke/which-key.nvim",
     {
+        'nvim-lualine/lualine.nvim',
+        config = function ()
+            require('lualine').setup {
+                options = { theme = 'horizon' }
+            }
+        end,
+        dependencies = { 'nvim-tree/nvim-web-devicons' }
+    },
+    {
         "numToStr/Comment.nvim",
         config = function()
             require('Comment').setup()
