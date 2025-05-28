@@ -38,7 +38,7 @@ local M = {
 
                 }
             },
-            ensure_installed = { "c", "lua", "vim", "vimdoc", "query", "typescript", "javascript", "html", "svelte" },
+            ensure_installed = { "c", "lua", "vim", "vimdoc", "query", "typescript", "javascript", "html", "svelte", "html" },
             sync_install = false,
             auto_install = true,
             highlight = { enable = true },
