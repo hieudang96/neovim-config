@@ -41,7 +41,7 @@ end)
 
 require("mason").setup({})
 require("mason-lspconfig").setup({
-  ensure_installed = {"ts_ls", "lua_ls", "cssls", "svelte", "rust_analyzer"},
+  ensure_installed = {"ts_ls", "lua_ls", "cssls", "svelte", "rust_analyzer", "zls"},
   handlers = {
     lsp.default_setup,
   },
