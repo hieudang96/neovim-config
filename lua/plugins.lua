@@ -9,6 +9,7 @@ return {
     { 'L3MON4D3/LuaSnip' },
     "folke/neodev.nvim",
     "folke/which-key.nvim",
+    {"jonboh/nvim-dap-rr", dependencies = {"nvim-dap", "telescope.nvim"}},
     {
         'nvim-lualine/lualine.nvim',
         config = function ()
@@ -29,6 +30,14 @@ return {
         dependencies = { "nvim-telescope/telescope.nvim", "nvim-lua/plenary.nvim" }
     },
     "nvim-lua/plenary.nvim",
+    {
+        "mfussenegger/nvim-dap",
+        dependencies = {
+            "rcarriga/nvim-dap-ui",
+            "theHamsta/nvim-dap-virtual-text",
+            "nvim-neotest/nvim-nio",
+        }
+    },
     "nvim-pack/nvim-spectre",
     "nvim-tree/nvim-web-devicons",
     { "folke/neoconf.nvim", cmd = "Neoconf" },
